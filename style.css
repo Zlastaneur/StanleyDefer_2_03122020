@@ -4,34 +4,67 @@ body {
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
-body ul{
-	list-style-type: none;
+.container{
+	max-width: 1300px;
 }
 
 header{
-	justify-content: space-between;
 	display: flex;
+	justify-content: center;
+}
+
+header .container{
+	width: 100%;
+	justify-content:space-between;
+	display: flex;
+	padding-bottom: 20px;
+	align-items: center;
 }
 
 .logo{
 	width: auto;
-	height: 2.5em;
-}
-
-.navbar{
-	display: flex;
+	height: 3em;
 }
 
 .navbar li{
 	display: inline-block;
+	list-style-type: none;
 }
 
-.navbar a {
-    text-decoration: none;
+.navbar a{
+	display: block;
+	position: relative;
+	text-decoration: none; 
+	color: black;
+	font-size: 0.9em;
+	font-weight:500;
+	padding: 25px;
+}
+
+.navbar a:after, .navbar a:before {
+  transition: all .3s;
+}
+
+.navbar a:hover {
 	color: #0065FC;
-	border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover{
-	border-bottom: 3px solid #0065FC;
+.navbar a:after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '';
+	background: #0065FC;
+	height: 1px;
+}
+.navbar a:hover:after{
+	width: 100%;
+}
+
+.inscription a{
+	color: #0065FC;
+	font-weight: bold;
 }
