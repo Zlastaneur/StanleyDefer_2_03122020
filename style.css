@@ -1,12 +1,19 @@
 /* Color theme : blue #0065FC - lighter blue #DEEBFF - grey #F2F2F2 */
 
-body {
+body{
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 .container{
-	max-width: 1300px;
+	display: flex;
+	box-sizing: border-box;
 }
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+/* --------- Header ----------- */
 
 header{
 	display: flex;
@@ -14,11 +21,12 @@ header{
 }
 
 header .container{
+	max-width: 1300px;
 	width: 100%;
 	justify-content:space-between;
-	display: flex;
-	padding-bottom: 20px;
 	align-items: center;
+	box-sizing: border-box;
+	padding: 0px 0px 0px 10px;
 }
 
 .logo{
@@ -41,11 +49,11 @@ header .container{
 	padding: 25px;
 }
 
-.navbar a:after, .navbar a:before {
+.navbar a, .navbar a:after, .navbar a:before{
   transition: all .3s;
 }
 
-.navbar a:hover {
+.navbar a:hover{
 	color: #0065FC;
 }
 
@@ -68,3 +76,280 @@ header .container{
 	color: #0065FC;
 	font-weight: bold;
 }
+
+/* ---------------- Filters section  ----------------- */
+
+#sectionFilters{
+	display: flex;
+	justify-content: center;
+}
+
+#sectionFilters .container{
+	max-width: 1300px;
+	width: 100%;
+	justify-content:flex-start;
+	flex-direction: column;	
+	box-sizing: border-box;
+	padding: 0px 0px 0px 10px;
+}
+
+.slogan h2{
+	margin-bottom: -10px;
+}
+
+.slogan p{
+	margin-bottom: 20px;
+}
+
+form.searchButton input[type=text]{
+	padding: 15px;
+	color: black;
+	font-weight: 600;
+	font-size: 1em;
+	float: left;
+	border:1px solid #F2F2F2;
+	border-right: none;
+}
+
+.searchButton ::placeholder{
+	color: black;
+}
+
+.searchButton input:focus::placeholder{
+	color: transparent;
+}
+
+form.searchButton button{
+	width: 120px;
+	padding: 15px;
+	background: #2196F3;
+	color: white;
+	font-size: 1em;
+	border-radius: 0px 15px 15px 0px;
+	border: 1px solid #F2F2F2;
+	border-left: none;
+	cursor: pointer;
+}
+
+.searchButton i{
+	float: left;
+	font-size: 1em;
+	background-color: #F2F2F2;
+	color: black;
+	padding: 17px;
+	border-radius: 15px 0 0 15px;
+}
+
+.filters{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 25px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.filters h3{
+	margin-right: 30px;
+}
+
+  /* --------------- Button ---------------- */
+
+button{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	vertical-align: middle;
+	background: transparent;
+	padding-left: 0;
+	font-size: inherit;
+	font-family: inherit;
+	margin-right: 20px;
+}
+
+/* --------------- Economic & Romantic button ---------------- */
+
+button.economic,button.romantic{
+	width: 11rem;
+	height:auto;
+}
+
+button.economic .circle,button.romantic .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.economic .buttonText,button.romantic .buttonText{
+	transition: all 0.3s;
+	width: 7.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 1px 0px 1px 1.8rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+
+}
+
+.economic i{
+	position: absolute;
+	left: 14px;
+	top: 17px;
+	z-index: 2;
+}
+
+.romantic i{
+	position: absolute;
+	font-size: 1.2em;
+	left: 14px;
+	top: 16px;
+	z-index: 2;
+}
+
+
+button.economic:hover .circle,button.romantic:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+/* ------- Familial button -------- */
+
+button.familial{
+	width: 9rem;
+	height:auto;
+}
+
+button.familial .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.familial .buttonText{
+	transition: all 0.3s;
+	width: 5.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 1px 0px 1px 1.8rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+
+}
+
+.familial i{
+	position: absolute;
+	left: 16px;
+	top: 15px;
+	font-size: 1.3em;
+	z-index: 2;
+}
+
+button.familial:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+  
+/* -------Animals button-------- */
+
+button.animals{
+	width: 15rem;
+	height:auto;
+}
+
+button.animals .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.animals .buttonText{
+	transition: all 0.3s;
+	width: 11.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 1px 0px 1px 1.8rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.animals i{
+	position: absolute;
+	font-size: 1.2em;
+	left: 13px;
+	top: 14px;
+	z-index: 2;
+}
+
+button.animals:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+
+button:hover .buttonText{
+	color: #0065FC;
+}
+
+/* ----Filters info---- */
+
+.info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 0.9em;
+}
+
+.info span.fa-stack.fa-2x{
+	font-size: 0.9em;
+	margin-right: 10px;
+	margin-left: -5px;
+}
+
+.info i.far.fa-circle.fa-stack-2x{
+	color: #f2f2f2;
+}
+
+.info i.fas.fa-info.fa-stack-1x{
+	color: #0065FC;
+}
+

@@ -12,35 +12,92 @@
 <body>
     <header>
         <div class="container">
-            <img class="logo" src ="../images/logo/Reservia@3x.png" alt="Logo Reservia">
+            <a href="index.html"><img class="logo" a href="index.html" src ="../images/logo/Reservia@3x.png" alt="Logo Reservia"></a>
             <nav class="navbar">
                 <ul>
-                    <li><a href="">Hébergements</a></li>
-                    <li><a href="">Activités</a></li>
+                    <li><a href="#sectionLodging">Hébergements</a></li>
+                    <li><a href="#sectionActivites">Activités</a></li>
                     <li class="inscription"><a href="">S'inscrire</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!----Section recherche & filtres---->
-    <section>
-
+    <!----Search and filters section---->
+    <section id="sectionFilters">
+        <div class="container">
+            <div class="slogan">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+            <div class="search"></i>
+                <form class="searchButton" action="">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <input type="text" placeholder="Marseille, France">
+                    <button type="submit">Rechercher</button>
+                </form>
+            </div>
+            <div class="filters">
+                <h3>Filtres</h3>
+                    <button class="economic">
+                        <span style="color:#0065FC;">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </span>
+                        <span class="circle" aria-hidden="true"></span>
+                        <span class="buttonText"></i>Économique</span>
+                    </button>
+                    <button class="familial">
+                        <span style="color:#0065FC;">
+                            <i class="fas fa-child"></i>
+                        </span>
+                        <span class="circle" aria-hidden="true"></span>
+                        <span class="buttonText"></i>Familial</span>
+                    </button>
+                    <button class="romantic">
+                        <span style="color:#0065FC;">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                        <span class="circle" aria-hidden="true"></span>
+                        <span class="buttonText"></i>Romantique</span>
+                    </button>
+                    <button class="animals">
+                        <span style="color:#0065FC;">
+                            <i class="fas fa-dog"></i>
+                        </span>
+                        <span class="circle" aria-hidden="true"></span>
+                        <span class="buttonText"></i>Animaux autorisés</span>
+                    </button>
+            </div>
+            <div class="info">
+                <span class="fa-stack fa-2x">
+                    <i class="far fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-info fa-stack-1x"></i>
+                </span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </div> 
     </section>
 
-    <!----Section hébergements---->
-    <section>
+    <!----Lodging section---->
+    <div class="containerSection">
+        <div class="containerSubSection">
+            <section id="sectionLodging">
+                <div class="container">
+                </div>
+            </section>
 
-    </section>
+    <!----Popular section---->
+            <section id="sectionPopular">
+                <div class="container">  
+                </div>
+            </section>
+        </div>
+    </div>
 
-    <!----Section populaires---->
-    <section>
-
-    </section>
-
-    <!----Section activités---->
-    <section>
-
+    <!----Activites section---->
+    <section id="sectionActivites">
+        <div class="container">  
+        </div>
     </section>
     
     <footer>
