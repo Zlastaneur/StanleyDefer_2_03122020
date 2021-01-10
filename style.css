@@ -93,7 +93,7 @@ header .container{
 	padding: 0px 0px 0px 10px;
 }
 
-.slogan h2{
+.slogan h1{
 	margin-bottom: -10px;
 }
 
@@ -149,6 +149,7 @@ form.searchButton button{
 }
 
 .filters h3{
+	font-size: 1.1em;
 	margin-right: 30px;
 }
 
@@ -276,7 +277,7 @@ button.familial:hover .circle{
 	border-radius: 1.625rem;
 }
   
-/* -------Animals button-------- */
+/* ------- Animals Button -------- */
 
 button.animals{
 	width: 15rem;
@@ -311,6 +312,7 @@ button.animals .buttonText{
 	color:black;
 	font-weight: 700;
 	line-height: 1.5;
+
 }
 
 .animals i{
@@ -341,7 +343,7 @@ button:hover .buttonText{
 
 .info span.fa-stack.fa-2x{
 	font-size: 0.9em;
-	margin-right: 10px;
+	margin-right: 5px;
 	margin-left: -5px;
 }
 
@@ -352,4 +354,188 @@ button:hover .buttonText{
 .info i.fas.fa-info.fa-stack-1x{
 	color: #0065FC;
 }
+
+
+/* ------ Containers ------ */
+
+.containerSection{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+}
+
+.containerSubSection{
+	width: 1300px;
+	display: flex;
+	justify-content:space-between;
+}
+
+/* ------Star------ */
+
+i.fas.fa-star.full{
+	color: #0065FC;
+	font-size: 0.8em;
+	margin: 0px;
+	padding: 0px;
+}
+
+i.fas.fa-star.empty{
+	color:#dadada;
+	font-size: 0.8em;
+}
+
+/* ------Lodging section------ */
+
+#sectionLodging .container{
+	display: flex;
+	max-width: 850px;
+	width: 100%;
+	height: 100%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 40px 40px 40px 40px;
+	flex-flow: wrap row;
+	justify-content: space-between;
+}
+
+#sectionLodging h2{
+	font-size: 1.25em;
+	margin: 0px 0px 24px 0px;
+	width: 100%;
+}
+
+#sectionLodging div.card a{
+	display: block;
+	height:180px;
+	width: 230px;
+	text-decoration: none;
+	color: black;
+}
+
+#sectionLodging .card{
+	display: flex;
+	flex-direction: row;
+	width: 230px;
+	height: 180px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 20px;
+	padding: 5px;
+	background-color: white;
+	margin-bottom: 30px;
+} 
+  
+#sectionLodging .card img{
+	width: 230px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+#sectionLodging .cardText{
+	padding-left:10px;
+}
+
+#sectionLodging h4{
+	font-size: 1em;
+	margin: 5px 0px 5px 0px;
+}
+
+#sectionLodging p{
+	font-size: 0.9em;
+	margin:5px 0px 5px 0px;
+}
+
+#sectionLodging .more p{
+	font-size: 1.1em;
+	margin:10px 0 0 0 ;
+	font-weight: 700;
+}
+
+#sectionLodging .more a{
+	color: black;
+	text-decoration: none;
+}
+
+/*-------------Popular section---------------*/
+
+#sectionPopular .container{
+	display: flex;
+	max-width: 400px;
+	width: 100%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 40px 40px 20px 40px;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	height: 100%;
+} 
+
+.titlePopular{
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+#sectionPopular h2{
+	font-size: 1.25em;
+	margin: 0px 0px 0px 0px;
+}
+
+#sectionPopular a{
+	display: block;
+	height:140px;
+	width: 330px;
+	text-decoration: none;
+	color: black;
+}
+
+#sectionPopular .card{
+	display: flex;
+	flex-direction: row;
+	width: 320px;
+	height: 130px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border-radius: 20px;
+	padding: 5px;
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+#sectionPopular .card img{
+	width: 120px;
+	height: 130px;
+	object-fit: cover;
+	border-radius: 20px 0px 0px 20px;
+}
+
+#sectionPopular .cardText{
+	padding-left:20px;
+	position: relative;
+}
+
+#sectionPopular h4{
+	font-size: 1em;
+	margin: 10px 0px 10px 0px;
+}
+
+#sectionPopular p{
+	font-size: 0.9em;
+	margin:5px 0px 5px 0px;
+}
+
+#sectionPopular div.cardText span{
+	position: absolute;
+	bottom: 10px;
+}
+
+#sectionLodging .card:hover, #sectionPopular .card:hover{
+transform: scale(1.1);
+transition-duration: 0.2s;
+transition-timing-function: ease-in;
+background-color: #DEEBFF;
+}
+
 
