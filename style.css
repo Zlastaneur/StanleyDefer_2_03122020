@@ -679,3 +679,24 @@ footer a{
 	font-size: 0.9em;
 	font-weight:500;
 }
+
+/*--------------Media Queries---------------*/
+
+/*
+Small devices : 576-767px
+Medium devices : 768-991px
+Large devices : 992-1299px
+XL devices : min-width: 1300px
+*/
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 991px){
+	
+}
+
+@media (max-width: 1299px){
+	
+}
