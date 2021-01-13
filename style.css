@@ -387,6 +387,10 @@ i.fas.fa-star.empty{
 
 /* ------Lodging section------ */
 
+#sectionLodging {
+	margin-right: 20px;
+}
+
 #sectionLodging .container{
 	display: flex;
 	max-width: 850px;
@@ -423,7 +427,7 @@ i.fas.fa-star.empty{
 	border-radius: 20px;
 	padding: 5px;
 	background-color: white;
-	margin-bottom: 30px;
+	margin: 5px 5px 30px 5px;
 } 
   
 #sectionLodging .card img{
@@ -444,12 +448,16 @@ i.fas.fa-star.empty{
 
 #sectionLodging p{
 	font-size: 0.9em;
-	margin:5px 0px 5px 0px;
+	margin: 5px 0px 5px 0px;
+}
+
+#sectionLodging .more{
+	width: 100%;
 }
 
 #sectionLodging .more p{
 	font-size: 1.1em;
-	margin:10px 0 0 0 ;
+	margin: 10px 0 0 0;
 	font-weight: 700;
 }
 
@@ -478,6 +486,10 @@ i.fas.fa-star.empty{
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
+}
+
+.titlePopular i{
+	font-size: 1.4em;
 }
 
 #sectionPopular h2{
@@ -532,21 +544,21 @@ i.fas.fa-star.empty{
 	bottom: 10px;
 }
 
-#sectionLodging .card:hover, #sectionPopular .card:hover, #sectionActivites .card:hover, #sectionActivites .cardSmall:hover{
+#sectionLodging .card:hover, #sectionPopular .card:hover, #sectionActivities .card:hover, #sectionActivities .cardSmall:hover{
 transform: scale(1.1);
 transition-duration: 0.2s;
 transition-timing-function:ease-in;
 background-color: #DEEBFF;
 }
 
-/*--------------Popular section---------------*/
+/*--------------Activities section---------------*/
 
-#sectionActivites{
+#sectionActivities{
 	display: flex;
 	justify-content: center;
 }
 
-#sectionActivites .container{
+#sectionActivities .container{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
@@ -556,19 +568,19 @@ background-color: #DEEBFF;
 	border-radius: 20px;
 	box-sizing: border-box;
 	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 } 
 
-#sectionActivites h2{
+#sectionActivities h2{
 	width: 100%;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 	max-height: 80px;
 	display: flex;
 	font-size: 1.25em;
 	margin: 0px 0px 0px 0px;
 }
 
-#sectionActivites a{
+#sectionActivities a{
 	display: block;
 	height:140px;
 	width: 330px;
@@ -576,7 +588,7 @@ background-color: #DEEBFF;
 	color: black;
 }
 
-#sectionActivites .card{
+#sectionActivities .card{
 	display: flex;
 	flex-direction: row;
 	width: 280px;
@@ -584,9 +596,10 @@ background-color: #DEEBFF;
 	box-shadow: 0 4px 8px 0 #e9e9e9;
 	border-radius: 20px;
 	background-color: white;
+	margin: 5px 5px 10px 5px;
 }
 
-#sectionActivites .cardSmall{
+#sectionActivities .cardSmall{
 	display: flex;
 	flex-direction: row;
 	width: 300px;
@@ -596,26 +609,26 @@ background-color: #DEEBFF;
 	background-color: white;
 }
 
-#sectionActivites .card img{
+#sectionActivities .card img{
 	width: 280px;
 	height: 380px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
 }
 
-#sectionActivites .cardSmall img{
+#sectionActivities .cardSmall img{
 	width: 300px;
 	height: 140px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
 }
 
-#sectionActivites .cardText{
+#sectionActivities .cardText{
 	padding-left:20px;
 	position: relative;
 }
 
-#sectionActivites h4{
+#sectionActivities h4{
 	font-size: 0.9em;
 	margin: 10px 0px 10px 0px;
 }
@@ -626,7 +639,10 @@ background-color: #DEEBFF;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 5px 5px 10px 5px;
 }
+
+/*--------------Footer---------------*/
 
 footer{
 	display: flex;
