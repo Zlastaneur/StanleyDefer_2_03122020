@@ -9,9 +9,9 @@ body{
 	box-sizing: border-box;
 }
 
-*,*:focus,*:hover{
+/*:focus,*:hover{
     outline:none;
-}
+}*/
 
 /* --------- Header ----------- */
 
@@ -39,12 +39,16 @@ header .container{
 	list-style-type: none;
 }
 
+.navbar{
+	display: flex;
+}
+
 .navbar a{
 	display: block;
 	position: relative;
 	text-decoration: none; 
 	color: black;
-	font-size: 0.9em;
+	font-size: em;
 	font-weight:500;
 	padding: 25px;
 }
@@ -75,6 +79,10 @@ header .container{
 .inscription a{
 	color: #0065FC;
 	font-weight: bold;
+}
+
+.signIn{
+	padding: 0;
 }
 
 /* ---------------- Filters section  ----------------- */
@@ -132,13 +140,20 @@ form.searchButton button{
 	cursor: pointer;
 }
 
-.searchButton i{
+.searchButton i.fas.fa-map-marker-alt{
 	float: left;
 	font-size: 1em;
 	background-color: #F2F2F2;
 	color: black;
 	padding: 17px;
 	border-radius: 15px 0 0 15px;
+}
+
+.searchButton span.text{
+	display: inline-block;
+}
+.searchButton span.icon{
+	display: none;
 }
 
 .filters{
@@ -691,6 +706,84 @@ XL devices : min-width: 1300px
 
 @media (max-width: 767px){
 
+	body{
+		max-width: 100%;
+		overflow-x: hidden;
+		margin: 20px 0 0 0;
+	}
+
+	header .container{
+		max-width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		padding: 0;
+	}
+
+	.logo{
+		position: absolute;
+		top: 30px;
+		left: 20px;
+		margin: 0;
+	}
+
+	.navbar{
+		width: 100%;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		display: flex;
+		list-style-type: none;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.navbar a{
+		color: black;
+		font-size: 1em;
+		font-weight:600;
+		padding: 25px;
+		text-decoration: none; 
+	}
+
+	.navbar .signIn{
+		order: 1;
+		justify-content: flex-end;
+		margin: 27px 20px 0 0;
+	}
+
+	.navbar .signIn a{
+		color: #0065FC;
+		font-weight: bold;
+		padding: 0;
+	}
+
+	.navbar .navItems{
+		width: 100;
+		order: 2;
+		margin: 40px 0 0 0;
+	}
+
+	.navbar .navItems li{
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.navbar .navItems a{
+		padding: 0 0 10px 0;
+	}
+
+	.navItems li:hover{
+		border-bottom: 3px solid #0065FC;
+	}
+
+	.navbar a:hover:after{
+		width: 0%;
+	}
 }
 
 @media (max-width: 991px){

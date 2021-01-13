@@ -12,11 +12,13 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html"><img class="logo" src ="../images/logo/Reservia@3x.png" alt="Logo Reservia"></a>
+                <a href="index.html"><img class="logo" src ="../images/logo/Reservia@3x.png" alt="Logo Reservia"></a>
             <nav class="navbar">
-                <ul>
+                <ul class="navItems">
                     <li><a href="#sectionLodging">Hébergements</a></li>
-                    <li><a href="#sectionActivites">Activités</a></li>
+                    <li><a href="#sectionActivities">Activités</a></li>
+                </ul>
+                <ul class="signIn">
                     <li class="inscription"><a href="">S'inscrire</a></li>
                 </ul>
             </nav>
@@ -34,7 +36,10 @@
                 <form class="searchButton">
                     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     <input type="text" placeholder="Marseille, France">
-                    <button type="submit">Rechercher</button>
+                    <button type="submit">
+                        <span class="text">Rechercher</span>
+                        <span class="icon"><i class="fas fa-search"></i></span>
+                    </button>
                 </form>
             </div>
             <div class="filters">
