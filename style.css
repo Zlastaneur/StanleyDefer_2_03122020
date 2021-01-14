@@ -7,11 +7,12 @@ body{
 .container{
 	display: flex;
 	box-sizing: border-box;
+	max-width: 1300px;
 }
 
-/*:focus,*:hover{
+*,*:focus,*:hover{
     outline:none;
-}*/
+}
 
 /* --------- Header ----------- */
 
@@ -21,7 +22,6 @@ header{
 }
 
 header .container{
-	max-width: 1300px;
 	width: 100%;
 	justify-content:space-between;
 	align-items: center;
@@ -48,7 +48,6 @@ header .container{
 	position: relative;
 	text-decoration: none; 
 	color: black;
-	font-size: em;
 	font-weight:500;
 	padding: 25px;
 }
@@ -93,7 +92,6 @@ header .container{
 }
 
 #sectionFilters .container{
-	max-width: 1300px;
 	width: 100%;
 	justify-content:flex-start;
 	flex-direction: column;	
@@ -577,7 +575,6 @@ background-color: #DEEBFF;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	max-width: 1300px;
 	max-height: 550px;
 	width: 100%;
 	border-radius: 20px;
@@ -666,8 +663,6 @@ footer{
 }
 
 footer .container{
-	
-	max-width: 1300px;
 	width: 100%;
 	justify-content:flex-start;
 	align-items: center;
@@ -704,7 +699,7 @@ Large devices : 992-1299px
 XL devices : min-width: 1300px
 */
 
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
 
 	body{
 		max-width: 100%;
@@ -761,7 +756,7 @@ XL devices : min-width: 1300px
 	}
 
 	.navbar .navItems{
-		width: 100;
+		width: 100%;
 		order: 2;
 		margin: 40px 0 0 0;
 	}
@@ -786,10 +781,10 @@ XL devices : min-width: 1300px
 	}
 }
 
-@media (max-width: 991px){
+@media screen and (max-width: 991px){
 	
 }
 
-@media (max-width: 1299px){
+@media screen and (max-width: 1299px){
 	
 }
