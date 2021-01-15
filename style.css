@@ -636,7 +636,7 @@ background-color: #DEEBFF;
 }
 
 #sectionActivities h4{
-	font-size: 0.9em;
+	font-size: 0.95em;
 	margin: 10px 0px 10px 0px;
 }
 
@@ -917,7 +917,7 @@ XL devices : min-width: 1300px
 		max-width: 100%;
 		background-color: white;
 		border-radius: 0px;
-		padding: 40px 40px 40px 40px;
+		padding: 40px 20px 30px 20px;
 		flex-flow: nowrap column;
 		align-items: center;
 	}
@@ -932,14 +932,14 @@ XL devices : min-width: 1300px
 
 	#sectionLodging .card{
 		width: 100%;
-		height: 180px;
-
+		height: 190px;
+		box-sizing: border-box;
 		padding: 5px;
 		margin: 5px 5px 10px 5px;
 	} 
 
 	#sectionLodging div.card a{
-		height:180px;
+		height:190px;
 		width: 100%;
 	}
 
@@ -950,8 +950,45 @@ XL devices : min-width: 1300px
 	#sectionLodging .more{
 		margin-top: 15px;
 	}
-
 	/*--------------Activities---------------*/
+
+	#sectionActivities .container{
+		flex-flow: no-wrap column;
+		max-height: 100%;
+		padding: 20px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	#sectionActivities a{
+		height:170px;
+		width: 100%;
+	}
+
+	#sectionActivities .card, #sectionActivities .cardSmall{
+		width: 100%;
+		height: 170px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 0px 0px 20px 0px;
+	}
+
+	#sectionActivities .card img, #sectionActivities .cardSmall img{
+		width: 100%;
+		height: 120px;
+	}
+
+	#sectionActivities .cardText{
+		padding-left:20px;
+		position: relative;
+	}
+
+	.twoCards{
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
 
 	/*--------------Footer---------------*/
 
@@ -959,14 +996,13 @@ XL devices : min-width: 1300px
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		justify-content:flex-start;
-		align-items: center;
+		align-items: flex-start;
 		box-sizing: border-box;
-		padding: 10px 0px 20px 10px;
+		padding: 20px;
 	}
 	
 	footer .container div{
-		margin-right: 225px;
+		margin: 5px 0px;
 	}
 	
 	footer li{
