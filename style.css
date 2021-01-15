@@ -371,16 +371,10 @@ button:hover .buttonText{
 
 /* ------ Containers ------ */
 
-.containerSection{
+.mainContainer{
 	width: 100%;
 	display: flex;
 	justify-content:center;
-}
-
-.containerSubSection{
-	width: 1300px;
-	display: flex;
-	justify-content:space-between;
 }
 
 /* ------Star------ */
@@ -400,7 +394,7 @@ i.fas.fa-star.empty{
 /* ------Lodging section------ */
 
 #sectionLodging {
-	margin-right: 20px;
+	margin-right: 50px;
 }
 
 #sectionLodging .container{
@@ -709,6 +703,7 @@ XL devices : min-width: 1300px
 
 	.container{
 		max-width: 100%;
+		width: 100%;
 	}
 
 	header{
@@ -854,31 +849,109 @@ XL devices : min-width: 1300px
 		margin-left: 0px;
 	}
 
-	/*--------------Lodging---------------*/
-
-	#sectionLodging{
-		max-width: 100%;
-	}
-
-	.containerSubSection{
+	/*--------------Container-------------*/
+	.mainContainer{
 		display: flex;
 		width: 100%;
 		flex-flow: wrap column;
 	}
 
-	/*#sectionLodging{
-		order: 2;
-	}
-	
-	#sectionPopular{
-		order: 1;
-	}*/
-
 	/*--------------Popular---------------*/
 
 	#sectionPopular{
 		max-width: 100%;
+		order: 1;
 	}
+
+	#sectionPopular .container{
+		max-width: 100%;
+		width: 100%;
+		margin: 0px;
+		border-radius: 0px;
+		padding: 30px 20px;
+		flex-flow: no-wrap column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.titlePopular{
+		margin-bottom: 30px;
+	}
+
+	#sectionPopular a{
+		margin-bottom: 10px;
+		width: 100%;
+		height:160px;
+	}
+
+	#sectionPopular .card{
+		width: 100%;
+		height: 160px;
+		box-sizing: border-box;
+	}
+
+	#sectionPopular .card img{
+		height: 150px;
+		width: 115px;
+	}
+
+	#sectionPopular .cardText{
+		padding-left: 15px;
+		padding-right: 10px;
+		width: 100%;
+	}
+
+	#sectionPopular div.cardText span{
+		bottom: 5px;
+	}
+
+	/*--------------Lodging---------------*/
+
+	#sectionLodging{
+		max-width: 100%;
+		margin: 0;
+	}
+
+	#sectionLodging .container{
+		display: flex;
+		max-width: 100%;
+		background-color: white;
+		border-radius: 0px;
+		padding: 40px 40px 40px 40px;
+		flex-flow: nowrap column;
+		align-items: center;
+	}
+
+	#sectionLodging{
+		order: 2;
+	}
+
+	#sectionLodging h2{
+		margin-bottom: 10px;
+	}
+
+	#sectionLodging .card{
+		width: 100%;
+		height: 180px;
+
+		padding: 5px;
+		margin: 5px 5px 10px 5px;
+	} 
+
+	#sectionLodging div.card a{
+		height:180px;
+		width: 100%;
+	}
+
+	#sectionLodging .card img{
+		width: 100%;
+	}
+
+	#sectionLodging .more{
+		margin-top: 15px;
+	}
+
+	/*--------------Activities---------------*/
 
 	/*--------------Footer---------------*/
 
