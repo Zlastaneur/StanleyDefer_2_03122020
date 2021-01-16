@@ -589,7 +589,7 @@ background-color: #DEEBFF;
 	display: block;
 	max-width: 100%;
 	height:140px;
-	width: 330px;
+	width: 280px;
 	text-decoration: none;
 	color: black;
 }
@@ -609,7 +609,7 @@ background-color: #DEEBFF;
 #sectionActivities .cardSmall{
 	display: flex;
 	flex-direction: row;
-	width: 300px;
+	width: 280px;
 	height: 190px;
 	box-shadow: 0 4px 8px 0 #e9e9e9;
 	border-radius: 20px;
@@ -624,7 +624,7 @@ background-color: #DEEBFF;
 }
 
 #sectionActivities .cardSmall img{
-	width: 300px;
+	width: 280px;
 	height: 140px;
 	object-fit: cover;
 	border-radius: 20px 20px 0px 0px;
@@ -642,7 +642,7 @@ background-color: #DEEBFF;
 
 .twoCards{
 	max-height: 450px;
-	max-width: 300px;
+	max-width: 280px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -1069,17 +1069,17 @@ XL devices : min-width: 1300px
 	}
 
 	#sectionLodging .card{
-		width: 220px;
+		width: 225px;
 		height: 200px;
 		margin: 0 5px 20px 0;
 	}
 
 	#sectionLodging .card img{
-		width: 220px;
+		width: 225px;
 	}
 
 	#sectionLodging div.card a{
-		width: 220px;
+		width: 225px;
 		height: 200px;
 	}
 
@@ -1205,7 +1205,7 @@ XL devices : min-width: 1300px
 	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1219px){
+@media screen and (min-width: 992px) and (max-width: 1299px){
 	
 	body{
 		margin: 0px;
@@ -1229,7 +1229,7 @@ XL devices : min-width: 1300px
 
 	#sectionLodging .container{
 		max-width: 100%;
-		padding: 40px 20px 30px 20px;
+		padding: 40px 10px 30px 10px;
 		justify-content: center;
 	}
 	
@@ -1238,18 +1238,7 @@ XL devices : min-width: 1300px
 	}
 	
 	#sectionLodging .card{
-		width: 200px;
-		height: 200px;
-		margin: 0 5px 20px 0;
-	}
-	
-	#sectionLodging .card img{
-		width: 200px;
-	}
-	
-	#sectionLodging div.card a{
-		width: 200px;
-		height: 200px;
+		margin: 0 15px 20px 15;
 	}
 	
 	#sectionLodging .cardText{
@@ -1275,7 +1264,7 @@ XL devices : min-width: 1300px
 		box-shadow: 0 4px 8px 0 #e9e9e9;
 		border-radius: 20px;
 		background-color: white;
-		margin: 5px 5px 10px 5px;
+		margin: 5px 15px 10px 15px;
 	}
 
 	#sectionActivities .card img, #sectionActivities .cardSmall img{
@@ -1289,8 +1278,31 @@ XL devices : min-width: 1300px
 		max-width: 100%;
 		margin: 0px 0px 0px 0px;
 	}
+		
+	/*--------------Popular---------------*/
+
+	#sectionPopular a{
+		height: 150px;
+		width: 330px;
+	}
+	
+	#sectionPopular .card{
+		width: 320px;
+		height: 150px;
+		margin-bottom: 5px
+	}
+	
+	#sectionPopular .card img{
+		width: 140px;
+		height: 150px;
+	}
+	
+	#sectionPopular .cardText{
+		padding-top: 10px;
+	}
 
 	/*--------------Activities---------------*/
+
 	footer .container{
 		justify-content: center;
 		padding: 10px 20px;
