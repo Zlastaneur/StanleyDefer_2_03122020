@@ -2,6 +2,7 @@
 
 body{
 	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	margin: 0;
 }
 
 .container{
@@ -375,6 +376,7 @@ button:hover .buttonText{
 	width: 100%;
 	display: flex;
 	justify-content:center;
+	box-sizing: border-box;
 }
 
 /* ------Star------ */
@@ -405,7 +407,7 @@ i.fas.fa-star.empty{
 	box-sizing: border-box;
 	padding: 40px 40px 40px 40px;
 	flex-flow: wrap row;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 #sectionLodging h2{
@@ -432,7 +434,7 @@ i.fas.fa-star.empty{
 	border-radius: 20px;
 	padding: 5px;
 	background-color: white;
-	margin: 5px 5px 30px 5px;
+	margin: 5px 10px 30px 5px;
 } 
   
 #sectionLodging .card img{
@@ -571,6 +573,7 @@ background-color: #DEEBFF;
 	box-sizing: border-box;
 	margin-top: 60px;
 	margin-bottom: 60px;
+	padding:0 10px;
 } 
 
 #sectionActivities h2{
@@ -658,7 +661,7 @@ footer .container{
 	justify-content:flex-start;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 10px 0px 20px 10px;
+	padding: 20px 10px;
 }
 
 footer .container div{
@@ -1202,6 +1205,98 @@ XL devices : min-width: 1300px
 	}
 }
 
-@media screen and (min-width: 992px) and (max-width: 1299px){
+@media screen and (min-width: 992px) and (max-width: 1219px){
 	
+	body{
+		margin: 0px;
+	}
+
+	header .container{
+		padding: 0 20px 0 20px;
+	}
+	
+	#sectionFilters .container{
+		padding: 0 20px 0 20px;
+	}
+
+	.mainContainer{
+		padding: 0 20px 0 20px;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	/*--------------Lodging---------------*/
+
+	#sectionLodging .container{
+		max-width: 100%;
+		padding: 40px 20px 30px 20px;
+		justify-content: center;
+	}
+	
+	#sectionLodging{
+		margin-right: 20px;
+	}
+	
+	#sectionLodging .card{
+		width: 200px;
+		height: 200px;
+		margin: 0 5px 20px 0;
+	}
+	
+	#sectionLodging .card img{
+		width: 200px;
+	}
+	
+	#sectionLodging div.card a{
+		width: 200px;
+		height: 200px;
+	}
+	
+	#sectionLodging .cardText{
+		padding-top: 5px;
+	}
+	
+	/*--------------Activities---------------*/
+	
+	#sectionActivities .container{
+		justify-content: center;
+		max-height: 100%;
+		padding: 0 20px 0 20px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+	#sectionActivities .card, #sectionActivities .cardSmall{
+		display: flex;
+		max-width: 100%;
+		flex-direction: row;
+		width: 280px;
+		height: 425px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 5px 5px 10px 5px;
+	}
+
+	#sectionActivities .card img, #sectionActivities .cardSmall img{
+		width: 280px;
+		height: 380px;
+	}
+
+	.twoCards{
+		flex-direction: row;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
+
+	/*--------------Activities---------------*/
+	footer .container{
+		justify-content: center;
+		padding: 10px 20px;
+	}
+
+	footer .container div{
+		margin: 0 50px;
+	}
 }
