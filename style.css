@@ -398,7 +398,6 @@ i.fas.fa-star.empty{
 }
 
 #sectionLodging .container{
-	display: flex;
 	max-width: 850px;
 	height: 100%;
 	background-color: #F2F2F2;
@@ -475,7 +474,6 @@ i.fas.fa-star.empty{
 /*-------------Popular section---------------*/
 
 #sectionPopular .container{
-	display: flex;
 	max-width: 400px;
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -566,7 +564,6 @@ background-color: #DEEBFF;
 }
 
 #sectionActivities .container{
-	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
 	max-height: 550px;
@@ -796,19 +793,13 @@ XL devices : min-width: 1300px
 
 	form.searchButton input[type=text]{
 		max-width: 60%;
-		padding: 15px;
 	}
 
 	form.searchButton button{
 		width: 52px;
 		height: 52px;
 		padding: 10px;
-		background: #2196F3;
-		color: white;
-		font-size: 1em;
 		border-radius: 15px;
-		border: 1px solid #F2F2F2;
-		border-left: none;
 		right: 10px;
 		margin: 0;
 	}
@@ -864,9 +855,8 @@ XL devices : min-width: 1300px
 	}
 
 	#sectionPopular .container{
-		max-width: 100%;
-		width: 100%;
 		margin: 0px;
+		max-width: 100%;
 		border-radius: 0px;
 		padding: 30px 20px;
 		flex-flow: no-wrap column;
@@ -896,6 +886,7 @@ XL devices : min-width: 1300px
 	}
 
 	#sectionPopular .cardText{
+		box-sizing: border-box;
 		padding-left: 15px;
 		padding-right: 10px;
 		width: 100%;
@@ -993,7 +984,6 @@ XL devices : min-width: 1300px
 	/*--------------Footer---------------*/
 
 	footer .container{
-		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -1022,10 +1012,196 @@ XL devices : min-width: 1300px
 	}
 }
 
-@media screen and (max-width: 991px){
-	
+@media screen and (min-width: 768px) and (max-width: 991px){
+	body{
+		width: 100%;
+		overflow-x: hidden;
+		margin: 0;
+	}
+
+	.container{
+
+		max-width: 100%;
+
+	}
+
+	/*--------------Header---------------*/
+
+	header{
+		width: 100%;
+	}
+
+	header .container{
+		padding: 0 20px;
+	}
+
+	/*--------------Filters---------------*/
+
+	#sectionFilters .container{
+		padding: 0 20px;
+	}
+
+	.filters{
+		justify-content: flex-start;
+	}
+
+	/*--------------Container-------------*/
+
+	.mainContainer{
+		display: flex;
+		width: 100%;
+		flex-flow: wrap column;
+	}
+	/*--------------Lodging---------------*/
+
+	#sectionLodging{
+		margin-right: 0px;
+	}
+
+	#sectionLodging .container{
+		border-radius: 0px;
+		max-width: 100%;
+		padding: 40px 20px 30px 20px;
+		justify-content: center;
+	}
+
+	#sectionLodging .card{
+		width: 220px;
+		height: 200px;
+		margin: 0 5px 20px 0;
+	}
+
+	#sectionLodging .card img{
+		width: 220px;
+	}
+
+	#sectionLodging div.card a{
+		width: 220px;
+		height: 200px;
+	}
+
+	#sectionLodging .cardText{
+		padding-top: 5px;
+	}
+
+	/*--------------Popular---------------*/
+	#sectionPopular{
+		max-width: 100%;
+		order: 1;
+	}
+
+	#sectionPopular .container{
+		max-width: 100%;
+		background-color: white;
+		border-radius: 0px;
+		padding: 30px 20px;
+		justify-content: center;
+	}
+
+	.titlePopular{
+		margin-bottom: 30px;
+	}
+
+	#sectionPopular a{
+		width: 220px;
+		height:300px;
+		margin: 10px;
+	}
+
+	#sectionPopular .card{
+		width: 220px;
+		height: 300px;
+		flex-direction: column;
+		box-sizing: border-box;
+	}
+
+	#sectionPopular .card img{
+		height: 140px;
+		width: 210px;
+		border-radius: 20px 20px 0 0;
+	}
+
+	#sectionPopular .cardText{
+		padding: 10px 20px 0px 20px;
+	}
+
+	#sectionPopular div.cardText span{
+		top: 120px;
+	}
+	/*--------------Activities------------*/
+
+	#sectionActivities .container{
+		max-height: 100%;
+		padding: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+		justify-content: center;
+	}
+
+	#sectionActivities .card{
+		width: 350px;
+		height: 350px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 5px;
+	}
+
+	#sectionActivities .cardSmall{
+		width: 350px;
+		height: 170px;
+	}
+
+	#sectionActivities a{
+		width: 350px;
+		height:350px;
+	}
+
+	#sectionActivities .card img{
+		width: 350px;
+		height: 300px;
+	}
+
+	#sectionActivities .cardSmall img{
+		width: 350px;
+		height: 110px;
+	}
+
+	.twoCards{
+		max-height: 350px;
+		max-width: 350px;
+		margin: 5px;
+	}
+
+	.one{
+		order: 1;
+	}
+
+	.two{
+		order: 1;
+	}
+
+	.three{
+		order: 4;
+	}
+
+	.four{
+		order: 3;
+	}
+
+	/*--------------Footer----------------*/
+
+	footer .container{
+		padding: 10px 20px;
+		justify-content: center;
+	}
+
+	footer .container div{
+		margin-right: 50px;
+	}
 }
 
-@media screen and (max-width: 1299px){
+@media screen and (min-width: 992px) and (max-width: 1299px){
 	
 }
