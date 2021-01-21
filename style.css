@@ -213,11 +213,10 @@ button.economic .buttonText,button.romantic .buttonText{
 	right: 0;
 	bottom: 0;
 	padding: 10px 5px 10px 20px;
-	margin: 1px 0px 1px 1.8rem;
+	margin: 0px 0px 0px 1.7rem;
 	color:black;
 	font-weight: 700;
 	line-height: 1.5;
-
 }
 
 .economic i{
@@ -234,7 +233,6 @@ button.economic .buttonText,button.romantic .buttonText{
 	top: 16px;
 	z-index: 2;
 }
-
 
 button.economic:hover .circle,button.romantic:hover .circle{
 	width: 100%;
@@ -271,7 +269,7 @@ button.familial .buttonText{
 	right: 0;
 	bottom: 0;
 	padding: 10px 5px 10px 20px;
-	margin: 1px 0px 1px 1.8rem;
+	margin: 0px 0px 0px 1.7rem;
 	color:black;
 	font-weight: 700;
 	line-height: 1.5;
@@ -322,7 +320,7 @@ button.animals .buttonText{
 	right: 0;
 	bottom: 0;
 	padding: 10px 5px 10px 20px;
-	margin: 1px 0px 1px 1.8rem;
+	margin: 0px 0px 0px 1.7rem;
 	color:black;
 	font-weight: 700;
 	line-height: 1.5;
@@ -574,6 +572,7 @@ background-color: #DEEBFF;
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding:0 10px;
+	background-color: white;
 } 
 
 #sectionActivities h2{
@@ -862,7 +861,7 @@ XL devices : min-width: 1300px
 		max-width: 100%;
 		border-radius: 0px;
 		padding: 30px 20px;
-		flex-flow: no-wrap column;
+		flex-flow: nowrap column;
 		align-items: center;
 		justify-content: center;
 	}
@@ -947,7 +946,7 @@ XL devices : min-width: 1300px
 	/*--------------Activities---------------*/
 
 	#sectionActivities .container{
-		flex-flow: no-wrap column;
+		flex-flow: nowrap column;
 		max-height: 100%;
 		padding: 20px;
 		margin-top: 0px;
@@ -1238,7 +1237,7 @@ XL devices : min-width: 1300px
 	}
 	
 	#sectionLodging .card{
-		margin: 0 15px 20px 15;
+		margin: 0 15px 20px 15px;
 	}
 	
 	#sectionLodging .cardText{
