@@ -1,0 +1,1313 @@
+/* Color theme : blue #0065FC - lighter blue #DEEBFF - grey #F2F2F2 */
+
+body{
+	font-family: 'Raleway', Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+.container{
+	display: flex;
+	box-sizing: border-box;
+	max-width: 1300px;
+	width: 100%;
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+/* --------- Header ----------- */
+
+header{
+	display: flex;
+	justify-content: center;
+}
+
+header .container{
+	justify-content:space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0px 0px 0px 10px;
+}
+
+.logo{
+	width: auto;
+	height: 3em;
+}
+
+.navbar li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.navbar{
+	display: flex;
+}
+
+.navbar a{
+	display: block;
+	position: relative;
+	text-decoration: none; 
+	color: black;
+	font-weight:500;
+	padding: 25px;
+}
+
+.navbar a, .navbar a:after, .navbar a:before{
+  transition: all .3s;
+}
+
+.navbar a:hover{
+	color: #0065FC;
+}
+
+.navbar a:after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '';
+	background: #0065FC;
+	height: 1px;
+}
+.navbar a:hover:after{
+	width: 100%;
+}
+
+.inscription a{
+	color: #0065FC;
+	font-weight: bold;
+}
+
+.signIn{
+	padding: 0;
+}
+
+/* ---------------- Filters section  ----------------- */
+
+#sectionFilters{
+	display: flex;
+	justify-content: center;
+}
+
+#sectionFilters .container{
+	justify-content:flex-start;
+	flex-direction: column;	
+	box-sizing: border-box;
+	padding: 0px 0px 0px 10px;
+	margin-bottom: 20px;
+}
+
+.slogan h1{
+	margin-bottom: -10px;
+}
+
+.slogan p{
+	margin-bottom: 20px;
+}
+
+form.searchButton input[type=text]{
+	padding: 15px;
+	color: black;
+	font-weight: 600;
+	font-size: 1em;
+	float: left;
+	border:1px solid #F2F2F2;
+	border-right: none;
+}
+
+.searchButton ::placeholder{
+	color: black;
+}
+
+.searchButton input:focus::placeholder{
+	color: transparent;
+}
+
+form.searchButton button{
+	width: 120px;
+	padding: 15px;
+	background: #2196F3;
+	color: white;
+	font-size: 1em;
+	border-radius: 0px 15px 15px 0px;
+	border: 1px solid #F2F2F2;
+	border-left: none;
+	cursor: pointer;
+}
+
+.searchButton i.fas.fa-map-marker-alt{
+	float: left;
+	font-size: 1em;
+	background-color: #F2F2F2;
+	color: black;
+	padding: 17px;
+	border-radius: 15px 0 0 15px;
+}
+
+.searchButton span.text{
+	display: inline-block;
+}
+.searchButton span.icon{
+	display: none;
+}
+
+.filters{
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 25px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.filters h3{
+	font-size: 1.1em;
+	margin-right: 30px;
+}
+
+  /* --------------- Button ---------------- */
+
+button{
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	vertical-align: middle;
+	background: transparent;
+	padding-left: 0;
+	font-size: inherit;
+	font-family: inherit;
+	margin-right: 20px;
+}
+
+/* --------------- Economic & Romantic button ---------------- */
+
+button.economic,button.romantic{
+	width: 11rem;
+	height:auto;
+}
+
+button.economic .circle,button.romantic .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.economic .buttonText,button.romantic .buttonText{
+	transition: all 0.3s;
+	width: 7.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 0px 0px 0px 1.7rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.economic i{
+	position: absolute;
+	left: 14px;
+	top: 17px;
+	z-index: 2;
+}
+
+.romantic i{
+	position: absolute;
+	font-size: 1.2em;
+	left: 14px;
+	top: 16px;
+	z-index: 2;
+}
+
+button.economic:hover .circle,button.romantic:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+/* ------- Familial button -------- */
+
+button.familial{
+	width: 9rem;
+	height:auto;
+}
+
+button.familial .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.familial .buttonText{
+	transition: all 0.3s;
+	width: 5.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 0px 0px 0px 1.7rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+
+}
+
+.familial i{
+	position: absolute;
+	left: 16px;
+	top: 15px;
+	font-size: 1.3em;
+	z-index: 2;
+}
+
+button.familial:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+  
+/* ------- Animals Button -------- */
+
+button.animals{
+	width: 15rem;
+	height:auto;
+}
+
+button.animals .circle{
+	transition: all 0.3s ;
+	position: relative;
+	display: block;
+	margin: 0;
+	width: 3rem;
+	height: 3rem;
+	background: #DEEBFF;
+	border-radius: 1.625rem;
+	line-height: 3;
+}
+  
+button.animals .buttonText{
+	transition: all 0.3s;
+	width: 11.25rem;
+	position: absolute;
+	border: 2px solid #F2F2F2;
+	border-left: none;
+	border-radius: 0px 25px 25px 0px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 10px 5px 10px 20px;
+	margin: 0px 0px 0px 1.7rem;
+	color:black;
+	font-weight: 700;
+	line-height: 1.5;
+
+}
+
+.animals i{
+	position: absolute;
+	font-size: 1.2em;
+	left: 13px;
+	top: 14px;
+	z-index: 2;
+}
+
+button.animals:hover .circle{
+	width: 100%;
+	border-radius: 1.625rem;
+}
+
+button:hover .buttonText{
+	color: #0065FC;
+}
+
+/* ----Filters info---- */
+
+.info{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-size: 0.9em;
+}
+
+.info span.fa-stack.fa-2x{
+	font-size: 0.9em;
+	margin-right: 5px;
+	margin-left: -5px;
+}
+
+.info i.far.fa-circle.fa-stack-2x{
+	color: #f2f2f2;
+}
+
+.info i.fas.fa-info.fa-stack-1x{
+	color: #0065FC;
+}
+
+
+/* ------ Containers ------ */
+
+.mainContainer{
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	box-sizing: border-box;
+}
+
+/* ------Star------ */
+
+i.fas.fa-star.full{
+	color: #0065FC;
+	font-size: 0.8em;
+	margin: 0px;
+	padding: 0px;
+}
+
+i.fas.fa-star.empty{
+	color:#dadada;
+	font-size: 0.8em;
+}
+
+/* ------Lodging section------ */
+
+#sectionLodging {
+	margin-right: 50px;
+}
+
+#sectionLodging .container{
+	max-width: 850px;
+	height: 100%;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 40px 40px 40px 40px;
+	flex-flow: wrap row;
+	justify-content: center;
+}
+
+#sectionLodging h2{
+	font-size: 1.25em;
+	margin: 0px 0px 24px 0px;
+	width: 100%;
+}
+
+#sectionLodging div.card a{
+	display: block;
+	height:180px;
+	width: 230px;
+	text-decoration: none;
+	color: black;
+}
+
+#sectionLodging .card{
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	width: 230px;
+	height: 180px;
+	box-shadow: 0 4px 8px 0 #e9e9e9;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: white;
+	margin: 5px 10px 30px 5px;
+} 
+  
+#sectionLodging .card img{
+	width: 230px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+
+#sectionLodging .cardText{
+	padding-left:10px;
+}
+
+#sectionLodging h4{
+	font-size: 1em;
+	margin: 5px 0px 5px 0px;
+}
+
+#sectionLodging p{
+	font-size: 0.9em;
+	margin: 5px 0px 5px 0px;
+}
+
+#sectionLodging .more{
+	width: 100%;
+}
+
+#sectionLodging .more p{
+	font-size: 1.1em;
+	margin: 10px 0 0 0;
+	font-weight: 700;
+}
+
+#sectionLodging .more a{
+	color: black;
+	text-decoration: none;
+}
+
+/*-------------Popular section---------------*/
+
+#sectionPopular .container{
+	max-width: 400px;
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	box-sizing: border-box;
+	padding: 40px 40px 20px 40px;
+	flex-flow: wrap row;
+	justify-content: space-between;
+	height: 100%;
+} 
+
+.titlePopular{
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+.titlePopular i{
+	font-size: 1.4em;
+}
+
+#sectionPopular h2{
+	font-size: 1.25em;
+	margin: 0px 0px 0px 0px;
+}
+
+#sectionPopular a{
+	display: block;
+	max-width: 100%;
+	height:140px;
+	width: 330px;
+	text-decoration: none;
+	color: black;
+}
+
+#sectionPopular .card{
+	display: flex;
+	max-width: 100%;
+	flex-direction: row;
+	width: 320px;
+	height: 130px;
+	box-shadow: 0 4px 8px 0 #e9e9e9;
+	border-radius: 20px;
+	padding: 5px;
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+#sectionPopular .card img{
+	width: 120px;
+	height: 130px;
+	object-fit: cover;
+	border-radius: 20px 0px 0px 20px;
+}
+
+#sectionPopular .cardText{
+	padding-left:20px;
+	position: relative;
+}
+
+#sectionPopular h4{
+	font-size: 1em;
+	margin: 10px 0px 10px 0px;
+}
+
+#sectionPopular p{
+	font-size: 0.9em;
+	margin:5px 0px 5px 0px;
+}
+
+#sectionPopular div.cardText span{
+	position: absolute;
+	bottom: 10px;
+}
+
+#sectionLodging .card:hover, #sectionPopular .card:hover, #sectionActivities .card:hover, #sectionActivities .cardSmall:hover{
+transform: scale(1.1);
+transition-duration: 0.2s;
+transition-timing-function:ease-in;
+background-color: #DEEBFF;
+}
+
+/*--------------Activities section---------------*/
+
+#sectionActivities{
+	display: flex;
+	justify-content: center;
+}
+
+#sectionActivities .container{
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-height: 550px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding:0 10px;
+	background-color: white;
+} 
+
+#sectionActivities h2{
+	width: 100%;
+	padding-bottom: 30px;
+	max-height: 80px;
+	display: flex;
+	font-size: 1.25em;
+	margin: 0px 0px 0px 0px;
+}
+
+#sectionActivities a{
+	display: block;
+	max-width: 100%;
+	height:140px;
+	width: 280px;
+	text-decoration: none;
+	color: black;
+}
+
+#sectionActivities .card{
+	display: flex;
+	max-width: 100%;
+	flex-direction: row;
+	width: 280px;
+	height: 425px;
+	box-shadow: 0 4px 8px 0 #e9e9e9;
+	border-radius: 20px;
+	background-color: white;
+	margin: 5px 5px 10px 5px;
+}
+
+#sectionActivities .cardSmall{
+	display: flex;
+	flex-direction: row;
+	width: 280px;
+	height: 190px;
+	box-shadow: 0 4px 8px 0 #e9e9e9;
+	border-radius: 20px;
+	background-color: white;
+}
+
+#sectionActivities .card img{
+	width: 280px;
+	height: 380px;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+
+#sectionActivities .cardSmall img{
+	width: 280px;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 20px 20px 0px 0px;
+}
+
+#sectionActivities .cardText{
+	padding-left:20px;
+	position: relative;
+}
+
+#sectionActivities h4{
+	font-size: 0.95em;
+	margin: 10px 0px 10px 0px;
+}
+
+.twoCards{
+	max-height: 450px;
+	max-width: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 5px 5px 10px 5px;
+}
+
+/*--------------Footer---------------*/
+
+footer{
+	display: flex;
+	justify-content: center;
+	background-color: #F2F2F2;
+}
+
+footer .container{
+	justify-content:flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 20px 10px;
+}
+
+footer .container div{
+	margin-right: 225px;
+}
+
+footer li{
+	list-style-type: none;
+	padding:5px 0 5px 0;
+}
+
+footer ul{
+	padding: 0;
+}
+
+footer a{
+	text-decoration: none; 
+	color: black;
+	font-size: 0.9em;
+	font-weight:500;
+}
+
+/*--------------Media Queries---------------*/
+
+/*
+Small devices : 576-767px
+Medium devices : 768-991px
+Large devices : 992-1299px
+XL devices : min-width: 1300px
+*/
+
+@media screen and (max-width: 767px){
+
+	body{
+		width: 100%;
+		overflow-x: hidden;
+		margin: 0;
+	}
+
+	.container{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	header{
+		width: 100%;
+		margin: 20px 0 0 0;
+	}
+
+	header .container{
+		justify-content: flex-end;
+		padding: 0;
+	}
+
+	.logo{
+		position: absolute;
+		top: 30px;
+		left: 20px;
+		margin: 0;
+	}
+
+	.navbar{
+		width: 100%;
+		align-items: flex-end;
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		display: flex;
+		list-style-type: none;
+		flex-direction: row;
+		width: 100%;
+	}
+
+	.navbar .signIn{
+		order: 1;
+		justify-content: flex-end;
+		margin: 27px 20px 0 0;
+	}
+
+	.navbar .signIn a{
+		color: #0065FC;
+		font-weight: bold;
+		padding: 0;
+	}
+
+	.navbar .navItems{
+		width: 100%;
+		order: 2;
+		margin: 40px 0 0 0;
+	}
+
+	.navbar .navItems li{
+		display: flex;
+		justify-content: center;
+		width: 50%;
+		border-bottom: 3px solid #F2F2F2;
+	}
+
+	.navbar .navItems a{
+		padding: 0 0 10px 0;
+	}
+
+	.navItems li:hover{
+		border-bottom: 3px solid #0065FC;
+	}
+
+	.navbar a:hover:after{
+		width: 0%;
+	}
+
+	/*--------------Filters---------------*/
+	
+	#sectionFilters .container{
+		padding: 10px 20px 0 20px;
+	}
+
+	.slogan h1{
+		font-size: 1.4em;
+		margin-bottom: 10px;
+	}
+	
+	.slogan p{
+		margin: 10px 0 35px 0;
+	}
+
+	#sectionFilters .search .searchButton{
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	form.searchButton input[type=text]{
+		max-width: 60%;
+	}
+
+	form.searchButton button{
+		width: 52px;
+		height: 52px;
+		padding: 10px;
+		border-radius: 15px;
+		right: 10px;
+		margin: 0;
+	}
+
+	.searchButton span.text{
+		display: none;
+	}
+
+	.searchButton span.icon{
+		display: inline-block;
+	}
+
+	.filters{
+		margin-bottom: 10px;
+	}
+
+	.filters h3{
+		width: 100%;
+	}
+
+	.filters button{
+		margin-bottom: 10px;
+	}
+
+	button.economic{
+		margin-right:10px ;
+	}
+
+	button.familial{
+		margin-right:0px ;
+	}
+	.info{
+		font-size: 1em;
+	}
+
+	.info span.fa-stack.fa-2x{
+		margin-right: 10px;
+		margin-left: 0px;
+	}
+
+	/*--------------Container-------------*/
+	.mainContainer{
+		display: flex;
+		width: 100%;
+		flex-flow: wrap column;
+	}
+
+	/*--------------Popular---------------*/
+
+	#sectionPopular{
+		max-width: 100%;
+		order: 1;
+	}
+
+	#sectionPopular .container{
+		margin: 0px;
+		max-width: 100%;
+		border-radius: 0px;
+		padding: 30px 20px;
+		flex-flow: nowrap column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.titlePopular{
+		margin-bottom: 30px;
+	}
+
+	#sectionPopular a{
+		margin-bottom: 10px;
+		width: 100%;
+		height:160px;
+	}
+
+	#sectionPopular .card{
+		width: 100%;
+		height: 160px;
+		box-sizing: border-box;
+	}
+
+	#sectionPopular .card img{
+		height: 150px;
+		width: 115px;
+	}
+
+	#sectionPopular .cardText{
+		box-sizing: border-box;
+		padding-left: 15px;
+		padding-right: 10px;
+		width: 100%;
+	}
+
+	#sectionPopular div.cardText span{
+		bottom: 5px;
+	}
+
+	/*--------------Lodging---------------*/
+
+	#sectionLodging{
+		max-width: 100%;
+		margin: 0;
+	}
+
+	#sectionLodging .container{
+		display: flex;
+		max-width: 100%;
+		background-color: white;
+		border-radius: 0px;
+		padding: 40px 20px 30px 20px;
+		flex-flow: nowrap column;
+		align-items: center;
+	}
+
+	#sectionLodging{
+		order: 2;
+	}
+
+	#sectionLodging h2{
+		margin-bottom: 10px;
+	}
+
+	#sectionLodging .card{
+		width: 100%;
+		height: 190px;
+		box-sizing: border-box;
+		padding: 5px;
+		margin: 5px 5px 10px 5px;
+	} 
+
+	#sectionLodging div.card a{
+		height:190px;
+		width: 100%;
+	}
+
+	#sectionLodging .card img{
+		width: 100%;
+	}
+
+	#sectionLodging .more{
+		margin-top: 15px;
+	}
+	/*--------------Activities---------------*/
+
+	#sectionActivities .container{
+		flex-flow: nowrap column;
+		max-height: 100%;
+		padding: 20px;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	#sectionActivities a{
+		height:170px;
+		width: 100%;
+	}
+
+	#sectionActivities .card, #sectionActivities .cardSmall{
+		width: 100%;
+		height: 170px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 0px 0px 20px 0px;
+	}
+
+	#sectionActivities .card img, #sectionActivities .cardSmall img{
+		width: 100%;
+		height: 120px;
+	}
+
+	#sectionActivities .cardText{
+		padding-left:20px;
+		position: relative;
+	}
+
+	.twoCards{
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
+
+	/*--------------Footer---------------*/
+
+	footer .container{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		box-sizing: border-box;
+		padding: 20px;
+	}
+	
+	footer .container div{
+		margin: 5px 0px;
+	}
+	
+	footer li{
+		list-style-type: none;
+		padding:5px 0 5px 0;
+	}
+	
+	footer ul{
+		padding: 0;
+	}
+	
+	footer a{
+		text-decoration: none; 
+		color: black;
+		font-size: 0.9em;
+		font-weight:500;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+	body{
+		width: 100%;
+		overflow-x: hidden;
+		margin: 0;
+	}
+
+	.container{
+
+		max-width: 100%;
+
+	}
+
+	/*--------------Header---------------*/
+
+	header{
+		width: 100%;
+	}
+
+	header .container{
+		padding: 0 20px;
+	}
+
+	/*--------------Filters---------------*/
+
+	#sectionFilters .container{
+		padding: 0 20px;
+	}
+
+	.filters{
+		justify-content: flex-start;
+	}
+
+	/*--------------Container-------------*/
+
+	.mainContainer{
+		display: flex;
+		width: 100%;
+		flex-flow: wrap column;
+	}
+	/*--------------Lodging---------------*/
+
+	#sectionLodging{
+		margin-right: 0px;
+	}
+
+	#sectionLodging .container{
+		border-radius: 0px;
+		max-width: 100%;
+		padding: 40px 20px 30px 20px;
+		justify-content: center;
+	}
+
+	#sectionLodging .card{
+		width: 225px;
+		height: 200px;
+		margin: 0 5px 20px 0;
+	}
+
+	#sectionLodging .card img{
+		width: 225px;
+	}
+
+	#sectionLodging div.card a{
+		width: 225px;
+		height: 200px;
+	}
+
+	#sectionLodging .cardText{
+		padding-top: 5px;
+	}
+
+	/*--------------Popular---------------*/
+	#sectionPopular{
+		max-width: 100%;
+		order: 1;
+	}
+
+	#sectionPopular .container{
+		max-width: 100%;
+		background-color: white;
+		border-radius: 0px;
+		padding: 30px 20px;
+		justify-content: center;
+	}
+
+	.titlePopular{
+		margin-bottom: 30px;
+	}
+
+	#sectionPopular a{
+		width: 220px;
+		height:300px;
+		margin: 10px;
+	}
+
+	#sectionPopular .card{
+		width: 220px;
+		height: 300px;
+		flex-direction: column;
+		box-sizing: border-box;
+	}
+
+	#sectionPopular .card img{
+		height: 140px;
+		width: 210px;
+		border-radius: 20px 20px 0 0;
+	}
+
+	#sectionPopular .cardText{
+		padding: 10px 20px 0px 20px;
+	}
+
+	#sectionPopular div.cardText span{
+		top: 120px;
+	}
+	/*--------------Activities------------*/
+
+	#sectionActivities .container{
+		max-height: 100%;
+		padding: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		border-radius: 0px;
+		justify-content: center;
+	}
+
+	#sectionActivities .card{
+		width: 350px;
+		height: 350px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 5px;
+	}
+
+	#sectionActivities .cardSmall{
+		width: 350px;
+		height: 170px;
+	}
+
+	#sectionActivities a{
+		width: 350px;
+		height:350px;
+	}
+
+	#sectionActivities .card img{
+		width: 350px;
+		height: 300px;
+	}
+
+	#sectionActivities .cardSmall img{
+		width: 350px;
+		height: 110px;
+	}
+
+	.twoCards{
+		max-height: 350px;
+		max-width: 350px;
+		margin: 5px;
+	}
+
+	.one{
+		order: 1;
+	}
+
+	.two{
+		order: 1;
+	}
+
+	.three{
+		order: 4;
+	}
+
+	.four{
+		order: 3;
+	}
+
+	/*--------------Footer----------------*/
+
+	footer .container{
+		padding: 10px 20px;
+		justify-content: center;
+	}
+
+	footer .container div{
+		margin-right: 50px;
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1299px){
+	
+	body{
+		margin: 0px;
+	}
+
+	header .container{
+		padding: 0 20px 0 20px;
+	}
+	
+	#sectionFilters .container{
+		padding: 0 20px 0 20px;
+	}
+
+	.mainContainer{
+		padding: 0 20px 0 20px;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+
+	/*--------------Lodging---------------*/
+
+	#sectionLodging .container{
+		max-width: 100%;
+		padding: 40px 10px 30px 10px;
+		justify-content: center;
+	}
+	
+	#sectionLodging{
+		margin-right: 20px;
+	}
+	
+	#sectionLodging .card{
+		margin: 0 15px 20px 15px;
+	}
+	
+	#sectionLodging .cardText{
+		padding-top: 5px;
+	}
+	
+	/*--------------Activities---------------*/
+	
+	#sectionActivities .container{
+		justify-content: center;
+		max-height: 100%;
+		padding: 0 20px 0 20px;
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+	
+	#sectionActivities .card, #sectionActivities .cardSmall{
+		display: flex;
+		max-width: 100%;
+		flex-direction: row;
+		width: 280px;
+		height: 425px;
+		box-shadow: 0 4px 8px 0 #e9e9e9;
+		border-radius: 20px;
+		background-color: white;
+		margin: 5px 15px 10px 15px;
+	}
+
+	#sectionActivities .card img, #sectionActivities .cardSmall img{
+		width: 280px;
+		height: 380px;
+	}
+
+	.twoCards{
+		flex-direction: row;
+		max-height: 100%;
+		max-width: 100%;
+		margin: 0px 0px 0px 0px;
+	}
+		
+	/*--------------Popular---------------*/
+
+	#sectionPopular a{
+		height: 150px;
+		width: 330px;
+	}
+	
+	#sectionPopular .card{
+		width: 320px;
+		height: 150px;
+		margin-bottom: 5px
+	}
+	
+	#sectionPopular .card img{
+		width: 140px;
+		height: 150px;
+	}
+	
+	#sectionPopular .cardText{
+		padding-top: 10px;
+	}
+
+	/*--------------Activities---------------*/
+
+	footer .container{
+		justify-content: center;
+		padding: 10px 20px;
+	}
+
+	footer .container div{
+		margin: 0 50px;
+	}
+}
